@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "separador-dados"
+version = "1.0.0"
+description = "Pipeline para ler, limpar, validar e separar dados tabulares."
+requires-python = ">=3.9"
+dependencies = ["pandas>=2.0", "openpyxl>=3.1"]
+
+[project.scripts]
+separador = "separador.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+{
+  "entrada": "data/clientes_exemplo.csv",
+  "saida": "saida",
+  "separar_por": "cidade",
+  "formato_saida": "csv",
+  "colunas_obrigatorias": ["nome", "cidade"],
+  "coluna_email": "e_mail",
+  "coluna_cpf": "cpf",
+  "colunas_data": ["data_de_nascimento"],
+  "duplicados_por": ["cpf", "nome"]
+}
